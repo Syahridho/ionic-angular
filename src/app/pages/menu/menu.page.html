@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="position: relative">
+    <ion-title>Menu</ion-title>
+    <ion-button
+      routerLink="/login"
+      color="danger"
+      style="position: absolute; right: 10px; top: 6px"
+      >Logout</ion-button
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">menu</ion-title>
+    </ion-toolbar>
+    <ion-button>Logout</ion-button>
+  </ion-header>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col
+          ><ion-button
+            routerLink="/create-mahasiswa"
+            style="width: 100%; height: 100px"
+            >Mahasiswa</ion-button
+          ></ion-col
+        >
+        <ion-col
+          ><ion-button style="width: 100%; height: 100px"
+            >Dosen</ion-button
+          ></ion-col
+        >
+      </ion-row>
+      <ion-row>
+        <ion-col
+          ><ion-button style="width: 100%; height: 100px"
+            >Matkul</ion-button
+          ></ion-col
+        >
+        <ion-col
+          ><ion-button
+            style="width: 100%; height: 100px; text-align: left !important"
+            >KRS</ion-button
+          ></ion-col
+        >
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-content>

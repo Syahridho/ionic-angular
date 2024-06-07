@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Mahasiswa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">create-mahasiswa</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h1 style="margin-left: 10px">Tambahkan Data</h1>
+  <form [formGroup]="bookingForm" (ngSubmit)="formSubmit()">
+    <ion-item>
+      <ion-input
+        label="NIM"
+        labelPlacement="floating"
+        placeholder="Masukkan NIM"
+        formControlName="nim"
+        type="text"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Nama Lengkap"
+        labelPlacement="floating"
+        placeholder="Masukkan Nama"
+        formControlName="name"
+        type="text"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Jurusan"
+        labelPlacement="floating"
+        placeholder="Masukkan Jurusan"
+        formControlName="jurusan"
+        type="text"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-button type="submit" color="primary" shape="full" expand="block"
+      >Tambahakan</ion-button
+    >
+  </form>
+</ion-content>

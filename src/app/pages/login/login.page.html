@@ -1,0 +1,38 @@
+<ion-header [translucent]="true"> </ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1 style="text-align: center; margin-top: 138px; font-size: 38px">Masuk</h1>
+  <ion-content>
+    <div style="padding: 26px">
+      <div style="margin: 18px 0">
+        <ion-input
+          label="Email"
+          label-placement="floating"
+          fill="outline"
+          placeholder="Enter text"
+        ></ion-input>
+      </div>
+      <div style="margin: 18px 0">
+        <ion-input
+          label="Password"
+          label-placement="floating"
+          fill="outline"
+          placeholder="Enter text"
+        ></ion-input>
+      </div>
+      <ion-button expand="block" style="height: 46px" routerLink="/menu"
+        >Masuk</ion-button
+      >
+      <ion-button
+        fill="outline"
+        expand="block"
+        style="height: 46px; margin-top: 10px"
+        routerLink="/signup"
+        >Daftar</ion-button
+      >
+      <div style="margin-top: 20px">
+        <a routerLink="/reset-password">Lupa Password?</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-content>
